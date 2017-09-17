@@ -5,7 +5,7 @@ var jsonfile = require('jsonfile')
 var file = "data.json"
 
 // Promise interface
-scrapeIt("http://ionicabizau.net", {
+scrapeIt("https://www.dasaran.am/apps/schools", {
     title: ".header h1"
     , desc: ".header h2"
     , avatar: {
@@ -20,7 +20,7 @@ scrapeIt("http://ionicabizau.net", {
 });
 
 // 2
-scrapeIt("http://ionicabizau.net", {
+scrapeIt("https://www.dasaran.am/apps/schools", {
     // Fetch the articles
     articles: {
         listItem: ".article"
@@ -65,7 +65,7 @@ scrapeIt("http://ionicabizau.net", {
     , title: ".header h1"
     , desc: ".header h2"
     , avatar: {
-        selector: ".header img"
+        selector: ".logo img"
         , attr: "src"
     }
 }, (err, page) => {
