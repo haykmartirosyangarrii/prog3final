@@ -24,7 +24,7 @@ scrapeIt("https://www.dasaran.am/apps/schools", {
     // Fetch the articles
     articles: {
         listItem: ".article"
-        , data: {
+        , data: {   
 
             // Get the article date and convert it into a Date object
             createdAt: {
@@ -62,7 +62,7 @@ scrapeIt("https://www.dasaran.am/apps/schools", {
     }
 
     // Fetch some other data from the page
-    , title: ".header h1"
+    , title: ".school-item card h5" //#school-tab-4 > ul > li:nth-child(5) > header > h5
     , desc: ".header h2"
     , avatar: {
         selector: ".logo img"
